@@ -5,20 +5,20 @@ set -e
 addgroup -S nginx \
   && adduser -D -S -h /var/cache/nginx -s /sbin/nologin -G nginx nginx \
   && apk add --no-cache --virtual .build-deps \
+    curl \
     gcc \
+    gd-dev \
+    geoip-dev \
+    gnupg \
     libc-dev \
+    libxslt-dev \
+    linux-headers \
     make \
     openssl-dev \
     pcre-dev \
-    zlib-dev \
-    linux-headers \
-    curl \
-    gnupg \
-    libxslt-dev \
-    gd-dev \
-    geoip-dev \
     perl-dev \
     unzip \
+    zlib-dev \
 
 
 # Install GPG keys
