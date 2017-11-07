@@ -9,11 +9,13 @@ addgroup -S nginx \
     gcc \
     gd-dev \
     geoip-dev \
+    git \
     gnupg \
     libc-dev \
     libxslt-dev \
     linux-headers \
     make \
+    openssh \
     openssl-dev \
     pcre-dev \
     perl-dev \
