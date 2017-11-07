@@ -2,7 +2,7 @@ FROM alpine:3.4
 
 MAINTAINER Dmitriy Belyaev "dimabelyaev27@gmail.com"
 
-ENV NGINX_VERSION 1.10.2
+ENV NGINX_VERSION 1.13.6
 
 COPY install.sh /usr/src/
 RUN sh -x /usr/src/install.sh

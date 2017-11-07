@@ -83,8 +83,9 @@ tar -zxC /usr/src -f nginx.tar.gz
 rm nginx.tar.gz
 mkdir -p /usr/src/upload
 cd /usr/src/upload
-curl -fSLO https://github.com/vkholodkov/nginx-upload-module/archive/2.2.zip
-unzip 2.2.zip
+git clone https://github.com/vkholodkov/nginx-upload-module.git
+cd nginx-upload-module
+git checkout 2.255
 mkdir -p /usr/src/progress
 cd /usr/src/progress
 curl -fSLO https://github.com/masterzen/nginx-upload-progress-module/archive/master.zip
