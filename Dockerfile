@@ -5,6 +5,8 @@ MAINTAINER Dmitriy Belyaev "dimabelyaev27@gmail.com"
 ENV NGINX_VERSION 1.13.6
 
 COPY install.sh /usr/src/
+COPY nginx.key /usr/src/
+
 RUN sh -x /usr/src/install.sh
 
 COPY nginx.conf /etc/nginx/nginx.conf
