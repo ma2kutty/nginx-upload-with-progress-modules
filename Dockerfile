@@ -2,7 +2,7 @@ FROM alpine:3.4
 
 MAINTAINER Dmitriy Belyaev "dimabelyaev27@gmail.com"
 
-ENV NGINX_VERSION 1.16.1
+ENV NGINX_VERSION 1.17.10
 
 COPY install.sh /usr/src/
 COPY nginx.key /usr/src/
