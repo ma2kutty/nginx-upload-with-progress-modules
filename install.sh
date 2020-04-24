@@ -24,7 +24,10 @@ addgroup -S nginx \
 
 
 # Install GPG keys
-gpg --import /usr/src/nginx.key
+#gpg --import /usr/src/nginx.key
+
+GPG_KEYS=B0F4253373F8F6F510D42178520A9993A1C052F8 \
+  && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEYS"
 
 CONFIG="\
         --prefix=/etc/nginx \
